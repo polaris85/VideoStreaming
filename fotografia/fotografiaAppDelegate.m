@@ -2,7 +2,7 @@
 //  fotografiaAppDelegate.m
 //  fotografia
 //
-//  Created by SKY on 11/24/14.
+//  Created by Adam on 11/24/14.
 //  Copyright (c) 2014 fotografia. All rights reserved.
 //
 
@@ -10,9 +10,11 @@
 
 @implementation fotografiaAppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    _autovideoarray = [[NSMutableArray alloc]init];
+    
     return YES;
 }
 							

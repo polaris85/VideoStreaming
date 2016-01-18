@@ -13,4 +13,20 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define IS_IPHONE_4 ( [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone )
+#define IS_IPAD ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define IS_IPHONE ( IS_IPHONE_4 && IS_WIDESCREEN )
+
+
 #endif
+
+
+#define NEXT_EVENT_API @"http://www.naminhaterra.com/webservices/json/nextevents/"
+#define PAST_EVENT_API @"http://naminhaterra.com/webservices/json/pastevents/index.php?"
+#define INFO_API       @"http://naminhaterra.com/webservices/json/channelslive/"
+#define INSIDE_EVENT_API @"http://www.naminhaterra.com/webservices/json/eventvideos/"
+#define AUTOPILOT_API  @"http://www.naminhaterra.com/webservices/json/autopilot/"
+#define Contact_API  @"http://naminhaterra.com/webservices/json/channel/"
+#define AUTO_VIDEO_API @"http://naminhaterra.com/webservices/json/videos"
